@@ -1,0 +1,29 @@
+package myPackage;
+
+public class RocketFuel {
+
+	public RocketFuel() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	 public int solution(int X, int Y, int D) {
+	        // write your code in Java SE 8
+	        
+	        if(X>Y || D<=0 || X<0 || Y<0 ) return -1;
+	        if(X == Y) return 0;
+	        
+	        long difference = (X -Y);
+	        long numJumps = difference/D;
+	        if(difference%D != 0)
+	        numJumps++;
+	        
+	        return numJumps;
+	    }
+	
+
+	public static void main(String[] args) {
+
+		new RocketFuel().solution();
+	}
+
+}

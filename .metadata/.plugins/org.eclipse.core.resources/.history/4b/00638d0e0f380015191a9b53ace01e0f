@@ -1,0 +1,17 @@
+package myPackage;
+
+public class test {
+
+	class Tree {
+		  public int x;
+		  public Tree l;
+		  public Tree r;
+		}
+	
+
+public static void main(String[] args) {
+	// TODO Auto-generated method stub
+
+}
+
+}

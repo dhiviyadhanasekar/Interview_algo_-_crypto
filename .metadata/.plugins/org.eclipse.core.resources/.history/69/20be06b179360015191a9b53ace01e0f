@@ -1,0 +1,23 @@
+package myPackage;
+
+public class PermMissingElement {
+
+	public PermMissingElement() {
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	private int solution() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(new PermMissingElement().solution());
+		
+	}
+
+
+
+}

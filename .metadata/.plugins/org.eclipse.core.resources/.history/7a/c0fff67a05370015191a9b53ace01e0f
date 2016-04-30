@@ -1,0 +1,33 @@
+package myPackage;
+
+import java.util.Arrays;
+
+public class FrogRiverOne {
+
+	public int solution(int X, int[] A) {
+
+		int[] dist = new int[X+1];
+		Arrays.fill(dist, -1);
+		
+		for(int i=0; i<A.length; i++)
+		{
+			if(A[i]>0 && A[i]<=X && dist[A[i]]==-1)
+			{
+				dist[A[i]] = i;
+			}
+		}
+		System.out.println(Arrays.asList(dist);
+		return -1;
+		
+    }
+	
+
+	public static void main(String[] args) {
+		
+		int[] A = {1,3,1,1,2,3,5,4,5};
+		
+		int output =  new FrogRiverOne().solution(5, A);
+		System.out.print(output);
+	}
+
+}

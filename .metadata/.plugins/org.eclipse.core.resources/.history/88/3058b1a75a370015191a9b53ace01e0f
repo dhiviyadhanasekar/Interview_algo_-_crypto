@@ -1,0 +1,66 @@
+package myPackage;
+
+import java.sql.Time;
+import java.util.Arrays;
+import java.util.Calendar;
+
+public class MaxCounters {
+
+	int increase(int[] counters, int X, int maxValue)
+	{
+
+		return maxValue;
+	}
+
+
+	public int[] solution(int N, int[] A) 
+	{
+		int[] counters = new int[N];
+		int maxValue = 0, consecMaxCount=0, minValue=0;;
+
+		for(int i=0; i<A.length; i++)
+		{
+			if(A[i] == (N+1))
+			{
+				consecMaxCount++;
+			}
+			else 
+			{
+				if(consecMaxCount > 0)
+				{
+					if(minValue<maxValue)
+					{	
+						Arrays.fill(counters, maxValue);
+						minValue = maxValue;
+					}
+					consecMaxCount = 0;
+				}
+				int index = A[i]-1;
+				counters[index]++;
+				if(maxValue < counters[index]) maxValue = counters[index];
+			}
+		}
+		if(minValue<maxValue && consecMaxCount > 0)
+		{
+			Arrays.fill(counters, maxValue);
+		}
+		return counters;
+	}
+
+	public static void main(String[] args) {
+	
+		int[] A = new int[1000000];
+		for (int i=0; i<1000000; i++)
+		{
+			A[i] = 1000000;
+		}
+		A[0] = 1;
+		A[1] = 1;
+		int N=999999;
+		long start  = System.currentTimeMillis();
+		int[] output=new MaxCounters().solution(N, A);
+		long end = System.currentTimeMillis();
+		System.out.println("Time taken=" + (end-start)/1000);
+	}
+
+}

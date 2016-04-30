@@ -1,0 +1,45 @@
+package myPackage;
+
+import java.util.Arrays;
+
+public class MaxCounters {
+
+	int increase(int[] counters, int X, int maxValue)
+	{
+
+		return maxValue;
+	}
+
+
+	public int[] solution(int N, int[] A) 
+	{
+		int[] counters = new int[N];
+		int maxValue = 0, consecMaxCount=0;
+
+		for(int i=0; i<A.length; i++)
+		{
+			if(A[i] == (N+1))
+			{
+				consecMaxCount++;
+			}
+			else 
+			{
+				if(consecMaxCount > 0)
+				{
+					Arrays.fill(counters, maxValue);
+					consecMaxCount = 0;
+				}
+				int index = A[i]-1;
+				counters[index]++;
+				if(maxValue < counters[index]) maxValue = counters[index];
+			}
+		}
+		return counters;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

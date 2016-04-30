@@ -1,0 +1,27 @@
+package myPackage;
+
+public class MaxCounters {
+
+	int increase(int[] counters, int X, int maxValue)
+	{
+		int index = X-1;
+		if(index >= 0 && index < counters.length)
+		{
+			counters[index]++;
+			if(maxValue < counters[index]) maxValue = counters[index];
+		}
+		return maxValue;
+	}
+	
+	public int[] solution(int N, int[] A) {
+        // write your code in Java SE 8
+		
+		return new int[]{};
+    }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

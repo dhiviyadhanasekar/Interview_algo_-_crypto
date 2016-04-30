@@ -1,0 +1,34 @@
+package myPackage;
+
+import static org.junit.Assert.*;
+
+import java.util.Arrays;
+import java.util.BitSet;
+import java.util.List;
+
+import org.junit.Test;
+
+public class TestFileOperations {
+
+	@Test
+	public void readInputFile() {
+		
+		
+	}
+
+	@Test
+	public void testarrays()
+	{
+		BitSet b= new BitSet(10);
+		b = BitSet.valueOf(new long[]{Long.parseLong("01000011",2)});
+		System.out.println(b.toString());
+		int[] arr = new int[]{1,0,10};
+		int[] arr1 = {1,2,3};
+		
+		List<Integer> intList = Arrays.asList(1,6,7,8,8);
+		intList.forEach(System.out::println);
+		
+		int [] arr = new int[10];
+		Arrays.fill(arr, 100);
+	}
+}

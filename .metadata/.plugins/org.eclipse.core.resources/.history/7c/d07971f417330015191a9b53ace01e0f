@@ -1,0 +1,17 @@
+package myPackage;
+
+public class MyThread extends Thread {
+	
+	public MyThread()
+	{
+		
+	}
+	
+	public void run ()
+	{
+		System.out.println(getName());
+	}
+
+}
+
+

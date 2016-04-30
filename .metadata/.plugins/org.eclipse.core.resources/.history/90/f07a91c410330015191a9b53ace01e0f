@@ -1,0 +1,28 @@
+package myPackage;
+
+public class MyModel {
+
+
+	private String studentName;
+	private int studentID;
+
+	public MyModel()
+	{
+		
+	}
+	
+	public MyModel (String studentName, int studentID) {
+
+		this.studentName = studentName;
+		this.studentID = studentID;
+	}
+
+	public String toString() {
+		
+		StringBuffer tempStr = new StringBuffer(studentID);
+		tempStr.append(",");
+//		tempStr.append(studentName);
+		return tempStr.toString();
+	}
+
+}

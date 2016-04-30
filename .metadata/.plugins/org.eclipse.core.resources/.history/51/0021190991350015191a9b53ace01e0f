@@ -1,0 +1,16 @@
+package myPackage;
+
+import java.util.LinkedList;
+
+public class ReverseLinkedList {
+
+	public ReverseLinkedList() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+
+		List<Integer> linkedList = new LinkedList<Integer>();
+	}
+
+}

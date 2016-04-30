@@ -1,0 +1,15 @@
+package myPackage;
+
+public class NewDemo {
+
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] A = {};
+		int output= new NewDemo().solution(A);
+
+	}
+
+}

@@ -1,0 +1,33 @@
+package myPackage;
+
+public class test {
+
+	public String solution(String S, int K) {
+		// write your code in Java SE 8
+		String temp = "", res="";
+		int counter = 0;
+		int n= S.length();
+
+		for(int i=n-1; i>=0; i--)
+		{
+			if(S.charAt(i) == '-') continue;
+			temp += Character.toUpperCase(S.charAt(i));
+			counter++;
+			if(counter==K && i!=0) 
+			{
+				temp+="-";
+				counter = 0;
+			}
+		}
+
+		res = new StringBuffer(temp).reverse().toString();
+	}
+	return res;
+}
+
+public static void main(String[] args) {
+	// TODO Auto-generated method stub
+
+}
+
+}

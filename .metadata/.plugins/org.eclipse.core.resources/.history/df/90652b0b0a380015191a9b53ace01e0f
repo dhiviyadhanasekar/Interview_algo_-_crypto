@@ -1,0 +1,18 @@
+package myPackage;
+
+public class test {
+
+	public String solution(String S, int K) {
+        // write your code in Java SE 8
+		String temp = "";
+		int counter = 0;
+		int n= S.length();
+		
+    }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

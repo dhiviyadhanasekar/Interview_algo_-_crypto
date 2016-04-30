@@ -1,0 +1,16 @@
+package myPackage;
+
+public class Mushrooms {
+
+	public int solution(int[] A, int k, int m)
+	{
+		boolean[] traverse = new boolean[A.length];
+		return recursive(A,k,m+1, traverse);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

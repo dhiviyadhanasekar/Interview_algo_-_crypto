@@ -1,0 +1,19 @@
+package myPackage;
+
+public class NestedParanthesis {
+
+	public int solution(String A)
+	{
+		
+	}
+
+	public static void main(String[] args) {
+		
+		String A = "(dknjen))"
+		
+		int output = new NestedParanthesis().solution(A);
+		System.out.println(output);
+
+	}
+
+}

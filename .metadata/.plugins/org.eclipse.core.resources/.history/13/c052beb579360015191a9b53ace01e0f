@@ -1,0 +1,30 @@
+package myPackage;
+
+public class PermMissingElement {
+
+	public PermMissingElement() {
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	 public int solution(int[] A) {
+	     
+		 int[] hashMap = null; 
+		 if(A == null || A.length == 0)
+		 {
+			 
+		 }
+			 
+		 	
+		 
+	    }
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(new PermMissingElement().solution(new int[0]));
+		
+	}
+
+
+
+}

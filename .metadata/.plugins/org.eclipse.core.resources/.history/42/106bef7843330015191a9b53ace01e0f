@@ -1,0 +1,9 @@
+package myPackage;
+
+public class InheritedModel extends MyModel{
+
+	public InheritedModel() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

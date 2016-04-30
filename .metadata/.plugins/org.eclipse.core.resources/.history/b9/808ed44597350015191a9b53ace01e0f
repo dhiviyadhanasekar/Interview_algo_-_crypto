@@ -1,0 +1,35 @@
+package myPackage;
+
+
+
+class Solution {
+    public int solution(int[] A) {
+        // write your code in Java SE 8
+        int sum =0, N = A.length;
+        
+        for(int i=0; i<N; i++)
+        {
+        	sum+=A[i];
+        }
+        
+        if(sum == 0) return (N-1);
+        
+        int newSum =0;
+        for(int i=0; i<N; i++)
+        {
+        	newSum += A[i];
+        	if(sum == newSum)
+        	{
+        		return (i+1);
+        	}
+        }
+        return -1;
+    }
+	
+	public static void main(String[] args) {
+
+		solution(new int[]{1,-1,0});
+		
+	}
+
+}

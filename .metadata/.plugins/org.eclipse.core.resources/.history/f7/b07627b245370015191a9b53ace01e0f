@@ -1,0 +1,20 @@
+package myPackage;
+
+public class Mushrooms {
+
+	public int solution(int[] A, int k, int m)
+	{
+		boolean[] traverse = new boolean[A.length];
+		return recursive(A,k,m+1, traverse);
+	}
+
+	private int recursive(int[] A, int k, int i, boolean[] traverse) {
+		if(m==0) return 0;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,57 @@
+package myPackage;
+
+import java.util.HashMap;
+
+public class StringProblems {
+	
+//	Implement an algorithm to determine if a string has all unique characters. What
+//	if you cannot use additional data structures?
+	
+	public boolean uniqueString2(String s)
+	{
+		if(s.length() > 256) return false;
+		
+		int checker=0, val;
+		for(int i =0;i<s.length();i++)
+		{
+			val = s.charAt(i) - 'a';
+			if((checker & (1<<val)) > 0) return false;
+			checker |= (1<<val);
+		}
+		return true;
+	}
+	
+	public boolean uniqueString1(String s)
+	{
+		HashMap<Character,Boolean> map = new HashMap<Character, Boolean>();
+		for(int i=0; i<s.length(); i++)
+		{
+			if(map.get(s.charAt(i))== null)
+			{
+				map.put(s.charAt(i), true);
+			}
+			else return false;
+		}
+		return true;
+	}
+	
+	public String reverseString(String s)
+	{
+		char[] stack = new char[s.length()];
+		int stackLen = 0;
+		for(int i=0; i<s.length(); i++)
+		{
+			stack[stackLen++] = s.charAt(i);
+		}
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		StringProblems obj = new StringProblems();
+		System.out.println(obj.uniqueString2("test"));
+		
+
+	}
+
+}

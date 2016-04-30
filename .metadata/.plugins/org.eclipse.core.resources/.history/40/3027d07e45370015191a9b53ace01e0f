@@ -1,0 +1,15 @@
+package myPackage;
+
+public class Mushrooms {
+
+	public int solution(int[] A, int k, int m)
+	{
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

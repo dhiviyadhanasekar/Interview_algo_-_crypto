@@ -1,0 +1,29 @@
+package myPackage;
+
+public class test {
+
+	class Tree {
+		  public int x;
+		  public Tree l;
+		  public Tree r;
+		}
+	
+	public int count(Tree t)
+	{
+		if(t== null) return 0;
+		int l =1;
+		l+=count(t.l);
+	}
+	
+	 public int solution(int A, int B, Tree T) {
+	        // write your code in Java SE 8
+		 	if(T == null) return 0;
+		 	
+	    }
+
+public static void main(String[] args) {
+	// TODO Auto-generated method stub
+
+}
+
+}

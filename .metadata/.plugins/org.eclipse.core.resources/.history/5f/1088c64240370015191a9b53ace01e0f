@@ -1,0 +1,35 @@
+package myPackage;
+
+public class PermCheck {
+
+	public int solution(int[] A) 
+	{
+		int invalid = 0, valid =1;
+		int n = A.length;
+		boolean[] perm = new bool[n+1];
+		int numbers = n;
+		
+		for(int i=0; i<n; i++)
+		{
+			if(A[i]>0 && A[i]<=N)
+			{
+				if(perm[A[i]] == false) {
+					
+				};
+				else return invalid
+			}
+		}
+		
+		return 0;
+	}
+
+	public static void main(String[] args) {
+
+		int[] A = {};
+
+		int output = new PermCheck().solution(A);
+		System.out.println(output);
+
+	}
+
+}

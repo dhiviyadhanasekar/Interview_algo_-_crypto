@@ -1,0 +1,90 @@
+package myPackage;
+
+import java.util.HashMap;
+
+public class StringProblems {
+	
+//	Implement an algorithm to determine if a string has all unique characters. What
+//	if you cannot use additional data structures?
+	
+	public boolean uniqueString2(String s)
+	{
+		if(s.length() > 256) return false;
+		
+		int checker=0, val;
+		for(int i =0;i<s.length();i++)
+		{
+			val = s.charAt(i) - 'a';
+			if((checker & (1<<val)) > 0) return false;
+			checker |= (1<<val);
+		}
+		return true;
+	}
+	
+	public boolean uniqueString1(String s)
+	{
+		HashMap<Character,Boolean> map = new HashMap<Character, Boolean>();
+		for(int i=0; i<s.length(); i++)
+		{
+			if(map.get(s.charAt(i))== null)
+			{
+				map.put(s.charAt(i), true);
+			}
+			else return false;
+		}
+		return true;
+	}
+	
+	public String reverseString(String s)
+	{
+		char[] stack = new char[s.length()];
+		int i = 0;
+		for(i=0; i<s.length(); i++)
+		{
+			stack[i] = s.charAt(i);
+		}
+		
+		StringBuffer reverse = new StringBuffer();
+		for(i=s.length()-1; i>=0; i--)
+		{
+			reverse.append(stack[i]);
+		}
+		return reverse.toString();
+	}
+	
+	public boolean permutation(String s1, String s2)
+	{
+		HashMap<Character, Integer> map1 = new HashMap<Character, Integer>();
+		HashMap<Character, Integer> map2 = new HashMap<Character, Integer>();
+		int i;
+		Integer mapVal;
+		for(i=0; i<s1.length(); i++)
+		{
+			mapVal = map1.get(s1.charAt(i));
+			if(mapVal == null) map1.put(s1.charAt(i), 1);
+			else map1.put(s1.charAt(i), mapVal+1);
+		}
+		for(i=0; i<s2.length(); i++)
+		{
+			mapVal = map2.get(s2.charAt(i));
+			if(mapVal == null) map2.put(s2.charAt(i), 1);
+			else map2.put(s2.charAt(i), mapVal+1);
+		}
+		for(Character c: map1.keySet())
+		{
+			mapVal = map2.get(c);
+			if(mapVal == null) return false;
+			if(mapVal != map1.get(c)) return false;
+		}
+	}
+	
+	public static void main(String[] args) {
+		
+		StringProblems obj = new StringProblems();
+		System.out.println(obj.reverseString("abc"));
+		
+		
+
+	}
+
+}

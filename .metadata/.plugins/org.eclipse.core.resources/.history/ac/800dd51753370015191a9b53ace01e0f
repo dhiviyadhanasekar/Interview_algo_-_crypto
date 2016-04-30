@@ -1,0 +1,37 @@
+package myPackage;
+
+public class MaxCounters {
+
+	int increase(int[] counters, int X, int maxValue)
+	{
+		int index = X-1;
+		if(index >= 0 && index < counters.length)
+		{
+			counters[index]++;
+			if(maxValue < counters[index]) maxValue = counters[index];
+		}
+		return maxValue;
+	}
+	
+	void maxCounter(int[] counters, int maxValue)
+	{
+		for(int i =0; i<counters.length; i++)
+		{
+			counters[i] = maxValue;
+		}
+	}
+	
+	
+	public int[] solution(int N, int[] A) 
+	{
+		int[] counters = new int[N];
+		for()
+		return new int[]{};
+    }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

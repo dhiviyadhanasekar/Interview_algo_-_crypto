@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;minValue&apos; in &apos;myPackage.MaxCounters.solution(...)&apos; to &apos;lastUpdatedValue&apos;&#x0D;&#x0A;- Original project: &apos;TestProject&apos;&#x0D;&#x0A;- Original element: &apos;myPackage.MaxCounters.solution(int, int[]).minValue&apos;&#x0D;&#x0A;- Renamed element: &apos;minValue&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;minValue&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;myPackage{MaxCounters.java[MaxCounters~solution~I~\[I@minValue!219!265!255!262!I!0!false" name="lastUpdatedValue" references="true" stamp="1438331546515" version="1.0"/>
+</session>

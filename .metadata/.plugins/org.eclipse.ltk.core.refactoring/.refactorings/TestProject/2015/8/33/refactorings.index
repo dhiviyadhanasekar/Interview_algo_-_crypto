@@ -1,0 +1,10 @@
+1439248500781	Rename local variable 'alphabet'
+1439254461560	Rename type 'RocketFuel'
+1439257523968	Rename type 'GiftProb'
+1439328120597	Rename type 'Tree'
+1439328797460	Move compilation unit
+1439337515969	Rename method 'inorderSearch'
+1439678645042	Rename local variable 'root'
+1439679183767	Rename local variable 'maxIndex'
+1439679246350	Rename method 'rightIndex'
+1439679255585	Rename method 'leftIndex'

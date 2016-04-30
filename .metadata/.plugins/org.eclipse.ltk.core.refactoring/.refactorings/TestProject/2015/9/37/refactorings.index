@@ -1,0 +1,18 @@
+1441509244881	Rename method 'decryption'
+1441509503997	Rename type 'Chap2Prob4'
+1441517486126	Delete element
+1441519106124	Extract method 'getCipherText'
+1441520240432	Rename method 'verifyKey'
+1441527512900	Rename method 'displayLetterFreq'
+1441535891459	Extract method 'getnLetterCounts'
+1441659688938	Rename local variable 'word'
+1441660886737	Rename method 'countWords'
+1441662564261	Rename method 'getCurrentBigramFreq'
+1441662590780	Rename method 'printLetterFreq'
+1441662985396	Delete element
+1441663667736	Rename method 'getOneLetterCounts'
+1441668364210	Rename field 'letterFreqMap'
+1441669158652	Rename local variable 'assumedKey'
+1441675635193	Extract method 'autoUpdateKey'
+1441688042101	Extract method 'printKey'
+1441691536591	Move package

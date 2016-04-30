@@ -1,0 +1,22 @@
+package myPackage;
+
+public class NestedParanthesis {
+
+	public int solution(String A)
+	{
+		int result = 0;
+		char[] stringArr = A.toCharArray();
+		
+		return (result==0)?0:1;
+	}
+
+	public static void main(String[] args) {
+		
+		String A = "(dknjen))";
+		
+		int output = new NestedParanthesis().solution(A);
+		System.out.println(output);
+
+	}
+
+}

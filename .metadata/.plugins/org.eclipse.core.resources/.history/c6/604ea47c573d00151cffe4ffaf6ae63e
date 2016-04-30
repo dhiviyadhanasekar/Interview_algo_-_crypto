@@ -1,0 +1,42 @@
+package myPackage;
+
+public class Matrix {
+
+	
+	public int[][] rotate90(int[][] matrix)
+	{
+		
+		int rowLength = matrix.length;
+		int colLength = matrix[0].lengthl
+		int matr
+		System.out.println(i);
+		for(int i=rowLength-1; i<matrix.length; i++)
+		{
+			for(int j=matrix[i].length-1; j>=0; j--)
+			{
+				
+			}
+		}
+		return matrix;
+	}
+	
+	public static void main(String[] args) {
+
+		Matrix obj = new Matrix();
+		int[][] test = {{1,2}, {1,2}};
+		int[][] output = obj.rotate90(test);
+		
+		for(int i=0; i<test.length; i++)
+		{
+			for(int j=0; j<test[i].length; j++)
+			{
+				System.out.print(output[i][j]);
+				System.out.print(" ");
+			}
+			System.out.println(" ");
+		}
+		
+		
+	}
+
+}

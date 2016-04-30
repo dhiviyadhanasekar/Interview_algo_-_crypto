@@ -1,0 +1,30 @@
+package myPackage;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
+
+public class ReverseLinkedList {
+
+	public ReverseLinkedList() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+
+		List<Integer> linkedList = new LinkedList<Integer>();
+		for(int i=0; i<10; i++)
+			linkedList.add(i);
+		System.out.println("Before reverse: " + linkedList);
+		Collections.reverse(linkedList);
+		System.out.println("After reverse: " + linkedList);
+		for(Iterator iter = linkedList.iterator(); iter!=null ; iter.next())
+		{
+			
+		}
+	}
+
+}
